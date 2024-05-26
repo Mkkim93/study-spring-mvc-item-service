@@ -41,10 +41,12 @@ class ItemRepositoryTest {
         // given (item1, 2가 존재한다.)
         Item item1 = new Item("썬칩", 1500, 2);
         Item item2 = new Item("바나나킥", 1200, 1);
+        Item item3 = new Item("화이트하임", 1400, 3);
 
         // when item1, 2의 데이터를 저장한다.
         itemRepository.save(item1);
         itemRepository.save(item2);
+//        itemRepository.save(item3);
 
         // 저장한 데이터를 리스트로 변환하고 items 를 모두 찾는다.
         List<Item> items = itemRepository.findAll();

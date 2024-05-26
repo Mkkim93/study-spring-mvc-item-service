@@ -37,6 +37,7 @@ public class ItemRepository {
         findItem.setItemName(updateItem.getItemName());
         findItem.setPrice(updateItem.getPrice());
         findItem.setQuantity(updateItem.getQuantity());
+
     }
 
     // 리스트 초기화
